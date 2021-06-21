@@ -55,6 +55,8 @@ extension JYDDatePicker {
 
 public class JYDDatePicker {
 	
+	public init() {}
+	
 	public var model: JYDDatePickerMode = .Default {
 		didSet {
 			switch model {
