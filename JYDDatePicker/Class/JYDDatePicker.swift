@@ -12,7 +12,7 @@ import Foundation
 /// Specify:指定模式,指定最小时间和最大时间
 /// After:从指定时间到之后的100年
 /// Befor:从1970年1月1日到指定时间
-enum JYDDatePickerMode {
+public enum JYDDatePickerMode {
 	
 	case Default
 	
@@ -28,7 +28,7 @@ enum JYDDatePickerMode {
 /// Date:年/月/日
 /// Time:时/分
 /// DateAndTime:月/日 上午|下午 时/分
-enum JYDDatePickerStyle {
+public enum JYDDatePickerStyle {
 	
 	case Date
 	
@@ -53,7 +53,7 @@ extension JYDDatePicker {
 	
 }
 
-class JYDDatePicker {
+public class JYDDatePicker {
 	
 	public var model: JYDDatePickerMode = .Default {
 		didSet {
@@ -111,7 +111,7 @@ class JYDDatePicker {
 
 extension JYDDatePicker: JYDDatePickerViewDelegate {
 	
-	func selected(with date: Date) {
+	public func selected(with date: Date) {
 		self.complete?(date)
 	}
 	

@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 import SnapKit
 
-public protocol JYDDatePickerViewDelegate: AnyObject {
+protocol JYDDatePickerViewDelegate: AnyObject {
 	
 	func selected(with date: Date)
 	
@@ -106,7 +106,7 @@ extension JYDDatePickerView {
 	
 }
 
-public class JYDDatePickerView: UIView {
+class JYDDatePickerView: UIView {
 	
 	public override init(frame: CGRect) {
 		super.init(frame: UIScreen.main.bounds)
